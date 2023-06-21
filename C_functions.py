@@ -1,29 +1,85 @@
 # A function takes inputs / arguments and returns outputs
 
+# We use functions to make a high-level contract of what is to be implemented,
+# or in coding terms, to "abstract", the small details of a problem
+# If the small details are taken care of, we can build and build to perform more complex processes.
+
 # def function_name(argument1, argument2):
 # if condition:
 #   helper_function1()
 # else:
 #   helper_function2()
 
-# GOAL: Print a pyramid of stars
+# Ex. Contract for split() function: 
+#        - input = 1. a string to divide into pieces a
+#                  2. a string to split the text on
+#          Arranged like so:
+#             "hi:hello:hola".split(":")
+#        - processing = we don't care!
+#        - output = a list of strings that have been split the given argument #2
 
-# BUG: number of stars in each row is one too few
-def print_star_row(n_stars_to_print):
+
+# Let's implement our own version of split
+def split(str1, split_char):
+    output = []
+    cur_str = ""
+    for char in str1:
+        if char is split_char:
+            output.append(cur_str)
+        else:
+            cur_str += char
+
+
+# In the future, use library function split() (a function of the str object in Python)
+
+# That way you don't need to build from building blocks that you could've used
+# in the first place.
+#    - You wouldn't want to use a bunch of 2x2 Lego bricks if you have an 8x2
+
+
+def add_plus_5(left: int, right: int) -> int:
+    sum = left + right + 5
+
+    return sum
+
+def concatenate(left, right):
+    together = str(left) + str(right)
+    return together
+
+
+# print(add_plus_5(2, 5))
+# print(concatenate(6, "five"))
+
+
+
+# GOAL: Make function to print a pyramid of stars
+
+# Implentation from a few classes ago...
+
+# my_list = range(100)
+# for number in my_list:
+#     print("*" * number)
+
+
+# Let's convert this implementation into two functions (not practical but a
+# good demo of functions calling functions)...
+
+# Let's make our basic building block:
+def print_star_row(n_stars_to_print: int):
     star_string = "*" * n_stars_to_print
     print(star_string)
+
 
 def print_star_pyramid(bottom_row_length: int):
     number_of_rows = bottom_row_length
     for i in range(number_of_rows):
         print_star_row(i)
 
-print_star_pyramid(3)
+# print_star_pyramid(3)
 
 
-# CONCEPTS: 
-# Zero-indexing: "you aren't born 1 year old, you are born 0 years old"
-# The first iteration of a loop and the first index of a list are both 0
+
+
 
 # CLASS GAME:
 # print character sprite (made of stars and other characters: an attribute of everyone's character)
@@ -34,11 +90,10 @@ print_star_pyramid(3)
 #  |  \____|
 #   \______/
 
-print("   ____nn_\n  /      \\n_|   []   \\n3_        =\n |  \____|\n  \______/")
+# print("   ____nn_\n  /      \\n_|   []   \\n3_        =\n |  \____|\n  \______/")
 
 # print wrong the first time, need an escape for backslash
-print("   ____nn_\n  /      \\\n_|   []   \\\n3_        =\n |  \____|\n  \______/")
-
+# print("   ____nn_\n  /      \\\n_|   []   \\\n3_        =\n |  \____|\n  \______/")
      
 # different sprites for different actions
 # character sprite could also be printing a picture

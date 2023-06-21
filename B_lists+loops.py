@@ -1,3 +1,11 @@
+# GOAL: Print a pyramid of stars
+
+# Let's use a loop, or a repeated process on data 
+
+# my_list = range(100)
+# for number in my_list:
+#     print("*" * number)
+
 # Goal: make a file containing everyone's name
 
 # Imagine if there were 1000 of us in this class, how would we do this without it taking forever??
@@ -26,7 +34,7 @@ import pandas
 
 # read the class roster table into a dictionary / dataframe variable called "roster_dict"
 # Absolute path (if I just Downloaded the csv from my browser)
-# roster_dict = pandas.read_csv("C:/Users/adamv/Downloads/Coding club 4th qtr 2023 (Responses) - Form Responses 1.csv")
+roster_dict = pandas.read_csv("C:/Users/adamv/Downloads/Coding club 4th qtr 2023 (Responses) - Form Responses 1.csv")
 #                             ^^^ - replace this filepath with the output of "pwd" command
 # Relative path (since the csv is also copied in this repo)
 roster_dict = pandas.read_csv("class_roster.csv")
