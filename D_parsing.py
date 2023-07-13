@@ -3,65 +3,47 @@
 
 #   - Parsing is how data is processed and formed into new data
 
-#   Ex. Assume a racecar can record its speed, acceleration, and tire
-#   temperature at each moment in time as it goes around a turn. If we use a...
+#    - Understanding is built one step at a time; so is parsing
+#    - Understanding is storing data (the state of something at a moment in
+#      time) in a structure in your head
+#    - Parsing is generating data structures (ie. dictionaries) in code
+#    - Parsing is how the computer understands data
+#    - Data always comes down to a stream of 1s and 0s ordered in a certain way
+#      (code.py files)
+#    - The computer reads the stream as it comes in, which is visualized from right to left in a stream
 
-#   Physical Model = using code to apply the mathematical laws of physics. 
-#   Representing some state in the world as math equations with data filling in the constants and
-#   variables in the formulas.
-#   We can solve for a variable with the = operator in Python
-#   Ex.
+# stream = [ "C" + "a" + "t"]
 
-m = 5
-b = 10
-x = input()
-y = m * x + b
-print(y)
+#   - We can use a Python function to do the job of parsing because a Python function has:
+
+#     Inputs: functionName(<the arguments inside here>)
+#            Ex. get_height(basketball_player)
+
+#     Processing: some database access / web scraping to find the right piece of data
+
+#     Outputs: return height
 
 
-#   - Parsing is like (and can be implemented as) a Python function that has
-#   inputs, does some processing, and returns outputs: 
+#   Assume your computer can use hardware devices made by electrical engineers
+#   to interpret the wave which is being sent by a webserver you are accessing as a
+#   stream of 1s and 0s of binary telling it which functions to perform on what data.
 
-#   Ex. Assume your computer can interpret the wave which is being sent by the 
-#   webserver you are accessing as a stream of 1s and 0s of binary through hardware made by  electrical engineers
-#   telling it which functions to perform on which data.
+#   Lets outline a basic parser to use for interpreting binary as letters:
 
-#   Lets make a basic parser to use for interpreting binary as letters
 #       Agreement between parser and parsee is a 5 bit word length for
 #       binary to integer conversion:
 #       Ex. 01101     ->     13   
+
 #       Agreement between parser and parsee is to convert from integer to
 #       lowercase character by alphabetical order (a=1, z=26, ...) 
 #       Ex.    13     ->     m
 
-
-#    
-import pandas as pd
-inputs = pd.DataFrame(columns=["Racecar speed", "acceleration", "tire temperature"])
-
-#    The row
+#    - There are lookback and lookahead windows to 5 letters before and in front
 
 
-
-#    - understanding is built one step at a time; so is parsing
-
-#    - there are lookback and lookahead windows to other frames
-
-# Ex. 
-
-#    - understanding is storing data (the state of something at a moment in
-#      time) in a structure in your head
-
-
-
-#    - parsing is generating data structures (ie. dictionaries) in code
-#    - parsing is how the computer understands data
-#    - data always comes down to a stream of 1s and 0s ordered in a certain way
-#      code.py files)
 
 
 #  Ex. 
-
 
 # Input:
 # get request some html site(same thing that happens when you Google something)
@@ -77,17 +59,19 @@ inputs = pd.DataFrame(columns=["Racecar speed", "acceleration", "tire temperatur
 import requests
 page = requests.get("https://www.basketball-reference.com/players/j/jokicni01.html")
 
+# Uncomment below:
 # print(page.text)
+
 # Wow... that was a lot of output.
+# Recomment
 
 import pandas
 page = requests.get("https://www.basketball-reference.com/players/j/jokicni01.html")
 
+height_chunks = []
 for line in page.text.split("\n"):
 
     if "tall." in line:
-        print(line)
-
-
-
-    print("Adam was here")
+        # Uncomment below:
+        # print(line)
+        height_chunks.append(line)

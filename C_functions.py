@@ -4,17 +4,44 @@
 # or in coding terms, to "abstract", the small details of a problem
 # If the small details are taken care of, we can build and build to perform more complex processes.
 
-# def function_name(argument1, argument2):
-# if condition:
-#   helper_function1()
-# else:
-#   helper_function2()
+# This is how you "declare" a function:
+
+def function_name(argument1, argument2):
+#   implementation goes here, indented
+#   Ex.
+    if helper_function1() == constant1:
+        return helper_function1()
+    else:
+        helper_function2(constant1)
+
+# You must declare a function before "calling" it. 
+
+# This is how you call a function:
+
+function_name(argument1=constant2, argument2=constant3)
+
+# You will get yellow squigglies under the above code if you are in VsCode
+
+# This means that if you try to run this file with the Python interpreter 
+# (by typing python C_functions.py into your terminal), you will get an error
+
+# Tip for VsCode: highlight multiple lines of text and then press ctrl+/ to add (or remove) the # 
+# which will comment or uncomment the line of code
+
+# Challenge: 
+#   Somewhere above line 9...
+#    1. give these helper_functions both declarations
+#    2. set the constants equal to something 
+#    3. try running with the Python interpreter and see your output
+
 
 # Ex. Contract for split() function: 
-#        - input = 1. a string to divide into pieces a
-#                  2. a string to split the text on
+#        - input / arguments = 1. a string to divide into pieces a
+#                              2. a string to split the text on
 #          Arranged like so:
-#             "hi:hello:hola".split(":")
+
+greeting_list = "hi:hello:hola".split(":")
+
 #        - processing = we don't care!
 #        - output = a list of strings that have been split the given argument #2
 
@@ -47,6 +74,7 @@ def concatenate(left, right):
     return together
 
 
+# Uncomment below to see your output!
 # print(add_plus_5(2, 5))
 # print(concatenate(6, "five"))
 
