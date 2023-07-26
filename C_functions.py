@@ -6,19 +6,20 @@
 
 # This is how you "declare" a function:
 
-def function_name(argument1, argument2):
-#   implementation goes here, indented
-#   Ex.
-    if helper_function1() == constant1:
-        return helper_function1()
-    else:
-        helper_function2(constant1)
+# def function_name(argument1, argument2):
+# #   implementation goes here, indented
+# #   Ex.
+#     if helper_function1() == constant1:
+#         return helper_function1()
+#     else:
+#         helper_function2(constant1)
+
 
 # You must declare a function before "calling" it. 
 
 # This is how you call a function:
 
-function_name(argument1=constant2, argument2=constant3)
+# function_name(argument1=constant2, argument2=constant3)
 
 # You will get yellow squigglies under the above code if you are in VsCode
 
@@ -103,7 +104,7 @@ def print_star_pyramid(bottom_row_length: int):
     for i in range(number_of_rows):
         print_star_row(i)
 
-# print_star_pyramid(3)
+print_star_pyramid(3)
 
 
 

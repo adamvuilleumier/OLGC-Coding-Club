@@ -1,4 +1,4 @@
-from functions import start_game, show_leaderboard
+from functions import pokemon_fight, show_leaderboard
 from classes import Pokemon
 
 
@@ -9,10 +9,11 @@ print("     View leaderboard")
 
 selection = input()
 
-my_pokemon = Pokemon()
+my_pokemon = Pokemon("bulbasaur", "grass")
+my_opponent = Pokemon("charmander", "fire")
 
 if selection == "Start game":
-    pokemon_fight()
+    pokemon_fight(my_pokemon, my_opponent)
 elif selection == "View leaderboard":
     show_leaderboard()
 else:

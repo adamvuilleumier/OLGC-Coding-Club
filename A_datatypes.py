@@ -25,14 +25,14 @@ answer_to_ultimate_question = (8 + 6) * 3
 # float
 acceleration_of_gravity = 9.8
 
-# bool
+# boolean
 is_coding_fun = True
 
 # building from only these simple data types, coders try to make a representation of real life things inside computer memory
 # things are represented as "classes" which have "features" or "attributes" which are all either primitive datatypes (or other classes!)
 # Ex.
 class Dragon:
-    def __init__(self, age, species, gold_hoard_value, breathes_fire):
+    def __init__(self, age, species, gold_hoard_value, breathes_fire, color):
         self.age = age
         self.species = species
         self.gold_hoard_value = gold_hoard_value
@@ -41,6 +41,7 @@ class Dragon:
 
 # lets make a dragon!
 zolthifax = Dragon(age=1192, species="Hungarian Horntail", gold_hoard_value=152202.78, breathes_fire=True)
+bob = Dragon(age=12, species="Magic dragon", gold_hoard_value=300, breathes_fire=False)
 print(zolthifax)
 
 # Type() function: takes in a variable as an argument and outputs its datatype (str, int, bool, float) or class

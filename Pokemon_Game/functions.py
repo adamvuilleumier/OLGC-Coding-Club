@@ -13,7 +13,7 @@ def pokemon_fight(start_attack_pokemon, start_defend_pokemon):
 
         print(f"{current_attacker} is attacking, say an attack")
         attack_type = input()
-        attack_damage = current_attacker.attack_list[attack_type]
+        attack_damage = current_attacker.attack_damage_list[attack_type]
         current_attacker.attack(attack_damage, current_defender)
 
         # clear screen
@@ -23,11 +23,11 @@ def pokemon_fight(start_attack_pokemon, start_defend_pokemon):
         # change turns
         # what should be filled in here? (remember the i and j swapping example)
         if current_attacker == start_attack_pokemon:
-            current_attacker = ?
-            current_defender = ?
+            current_attacker = start_defend_pokemon
+            current_defender = start_attack_pokemon
         else:
-            current_attacker = ?
-            current_defender = ?
+            current_attacker = start_attack_pokemon
+            current_defender = start_defend_pokemon
 
     # check who won
     if current_attacker.health > 0:
@@ -41,4 +41,5 @@ def show_leaderboard():
     print("---------------------------")
     print("Adam has the high score of 100")
     print("Jaden has 99")
+    print("Brannagh has 101")
     print("---------------------------")
