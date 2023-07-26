@@ -2,3 +2,5 @@ scratch*
 
 D_parsing.py
 E_signal_processing.py
+
+Pokemon_Game/__pycache__/*

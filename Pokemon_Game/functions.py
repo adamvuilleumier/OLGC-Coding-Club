@@ -1,4 +1,7 @@
 from classes import Pokemon
+import requests
+import re
+
 
 def pokemon_fight(start_attack_pokemon, start_defend_pokemon):
     # load current_attacker and current_defender variables
@@ -36,10 +39,10 @@ def pokemon_fight(start_attack_pokemon, start_defend_pokemon):
         print(f"{current_defender} wins!!!!")
 
 
-
 def show_leaderboard():
     print("---------------------------")
     print("Adam has the high score of 100")
     print("Jaden has 99")
     print("Brannagh has 101")
     print("---------------------------")
+
