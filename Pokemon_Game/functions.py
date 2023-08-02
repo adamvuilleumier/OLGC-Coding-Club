@@ -1,6 +1,4 @@
 from classes import Pokemon
-import requests
-import re
 
 
 def pokemon_fight(start_attack_pokemon, start_defend_pokemon):

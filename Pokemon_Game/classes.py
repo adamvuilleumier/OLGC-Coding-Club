@@ -1,8 +1,6 @@
 import requests
 import re
 
-HP_SCALING_FACTOR = 20
-
 class Pokemon():
     def __init__(self, poke_name, poke_type):
         self.name = poke_name
