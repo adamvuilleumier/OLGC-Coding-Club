@@ -1,148 +1,148 @@
-,Pokemon Name,HP
-0,Bulbasaur,60
-1,Ivysaur,80
-2,Venusaur,100
-3,Charmander,60
-4,Charmeleon,80
-5,Charizard,100
-6,Squirtle,60
-7,Wartortle,80
-8,Blastoise,100
-9,Caterpie,60
-10,Metapod,60
-11,Butterfree,80
-12,Weedle,60
-13,Kakuna,60
-14,Beedrill,80
-15,Pidgey,60
-16,Pidgeotto,80
-17,Pidgeot,100
-18,Rattata,40
-19,Raticate,80
-20,Spearow,60
-21,Fearow,80
-22,Ekans,60
-23,Arbok,80
-24,Pikachu,60
-25,Raichu,80
-26,Sandshrew,60
-27,Sandslash,100
-29,Nidorina,100
-30,Nidoqueen,120
-31,Nidorino,80
-32,Nidoking,100
-33,Clefairy,100
-34,Clefable,120
-35,Vulpix,60
-36,Ninetales,100
-37,Jigglypuff,140
-38,Wigglytuff,180
-39,Zubat,60
-40,Golbat,100
-41,Oddish,60
-42,Gloom,80
-43,Vileplume,100
-44,Paras,60
-45,Parasect,80
-46,Venonat,80
-47,Venomoth,100
-48,Diglett,20
-49,Dugtrio,60
-50,Meowth,60
-51,Persian,80
-52,Psyduck,60
-53,Golduck,100
-54,Mankey,60
-55,Primeape,80
-56,Growlithe,80
-57,Arcanine,120
-58,Poliwag,60
-59,Poliwhirl,80
-60,Poliwrath,120
-61,Abra,40
-62,Kadabra,60
-63,Alakazam,80
-64,Machop,100
-65,Machoke,100
-66,Machamp,120
-67,Bellsprout,60
-68,Weepinbell,80
-69,Victreebel,100
-70,Tentacool,60
-71,Tentacruel,100
-72,Geodude,60
-73,Graveler,80
-74,Golem,100
-75,Ponyta,60
-76,Rapidash,80
-77,Slowpoke,120
-78,Slowbro,120
-79,Magnemite,40
-80,Magneton,60
-82,Doduo,60
-83,Dodrio,80
-84,Seel,80
-85,Dewgong,120
-86,Grimer,100
-87,Muk,140
-88,Shellder,40
-89,Cloyster,60
-90,Gastly,40
-91,Haunter,60
-92,Gengar,80
-93,Onix,60
-94,Drowzee,80
-95,Hypno,100
-96,Krabby,40
-97,Kingler,80
-98,Voltorb,60
-99,Electrode,80
-100,Exeggcute,80
-101,Exeggutor,120
-102,Cubone,60
-103,Marowak,80
-104,Hitmonlee,60
-105,Hitmonchan,60
-106,Lickitung,120
-107,Koffing,60
-108,Weezing,80
-109,Rhyhorn,100
-110,Rhydon,140
-111,Chansey,300
-112,Tangela,80
-113,Kangaskhan,140
-114,Horsea,40
-115,Seadra,80
-116,Goldeen,60
-117,Seaking,100
-118,Staryu,40
-119,Starmie,80
-121,Scyther,100
-122,Jynx,80
-123,Electabuzz,80
-124,Magmar,80
-125,Pinsir,80
-126,Tauros,100
-127,Magikarp,40
-128,Gyarados,120
-129,Lapras,160
-130,Ditto,60
-131,Eevee,80
-132,Vaporeon,160
-133,Jolteon,80
-134,Flareon,80
-135,Porygon,80
-136,Omanyte,60
-137,Omastar,100
-138,Kabuto,40
-139,Kabutops,80
-140,Aerodactyl,100
-141,Snorlax,200
-142,Articuno,120
-143,Zapdos,120
-144,Moltres,120
-145,Dratini,60
-146,Dragonair,80
-147,Dragonite,120
-148,Mewtwo,140
-149,Mew,120
+,Pokemon Name,HP,Types
+0,Bulbasaur,60,"['Grass', 'Poison']"
+1,Ivysaur,80,"['Grass', 'Poison']"
+2,Venusaur,100,"['Grass', 'Poison', 'Grass', 'Poison', 'Grass', 'Poison']"
+3,Charmander,60,['Fire']
+4,Charmeleon,80,['Fire']
+5,Charizard,100,"['Fire', 'Flying', 'Fire', 'Dragon', 'Fire', 'Flying', 'Fire', 'Flying']"
+6,Squirtle,60,['Water']
+7,Wartortle,80,['Water']
+8,Blastoise,100,"['Water', 'Water', 'Water']"
+9,Caterpie,60,['Bug']
+10,Metapod,60,['Bug']
+11,Butterfree,80,"['Bug', 'Flying', 'Bug', 'Flying']"
+12,Weedle,60,"['Bug', 'Poison']"
+13,Kakuna,60,"['Bug', 'Poison']"
+14,Beedrill,80,"['Bug', 'Poison', 'Bug', 'Poison']"
+15,Pidgey,60,"['Normal', 'Flying']"
+16,Pidgeotto,80,"['Normal', 'Flying']"
+17,Pidgeot,100,"['Normal', 'Flying', 'Normal', 'Flying']"
+18,Rattata,40,"['Normal', 'Dark', 'Normal']"
+19,Raticate,80,"['Normal', 'Dark', 'Normal']"
+20,Spearow,60,"['Normal', 'Flying']"
+21,Fearow,80,"['Normal', 'Flying']"
+22,Ekans,60,['Poison']
+23,Arbok,80,['Poison']
+24,Pikachu,60,"['Electric', 'Electric']"
+25,Raichu,80,"['Electric', 'Electric', 'Psychic']"
+26,Sandshrew,60,"['Ground', 'Ice', 'Steel']"
+27,Sandslash,100,"['Ground', 'Ice', 'Steel']"
+29,Nidorina,100,['Poison']
+30,Nidoqueen,120,"['Poison', 'Ground']"
+31,Nidorino,80,['Poison']
+32,Nidoking,100,"['Poison', 'Ground']"
+33,Clefairy,100,['Fairy']
+34,Clefable,120,['Fairy']
+35,Vulpix,60,"['Fire', 'Ice']"
+36,Ninetales,100,"['Fire', 'Ice', 'Fairy']"
+37,Jigglypuff,140,"['Normal', 'Fairy']"
+38,Wigglytuff,180,"['Normal', 'Fairy']"
+39,Zubat,60,"['Poison', 'Flying']"
+40,Golbat,100,"['Poison', 'Flying']"
+41,Oddish,60,"['Grass', 'Poison']"
+42,Gloom,80,"['Grass', 'Poison']"
+43,Vileplume,100,"['Grass', 'Poison']"
+44,Paras,60,"['Bug', 'Grass']"
+45,Parasect,80,"['Bug', 'Grass']"
+46,Venonat,80,"['Bug', 'Poison']"
+47,Venomoth,100,"['Bug', 'Poison']"
+48,Diglett,20,"['Ground', 'Ground', 'Steel']"
+49,Dugtrio,60,"['Ground', 'Ground', 'Steel']"
+50,Meowth,60,"['Normal', 'Dark', 'Steel', 'Normal']"
+51,Persian,80,"['Normal', 'Dark']"
+52,Psyduck,60,['Water']
+53,Golduck,100,['Water']
+54,Mankey,60,['Fighting']
+55,Primeape,80,['Fighting']
+56,Growlithe,80,"['Fire', 'Fire', 'Rock']"
+57,Arcanine,120,"['Fire', 'Fire', 'Rock']"
+58,Poliwag,60,['Water']
+59,Poliwhirl,80,['Water']
+60,Poliwrath,120,"['Water', 'Fighting']"
+61,Abra,40,['Psychic']
+62,Kadabra,60,['Psychic']
+63,Alakazam,80,"['Psychic', 'Psychic']"
+64,Machop,100,['Fighting']
+65,Machoke,100,['Fighting']
+66,Machamp,120,"['Fighting', 'Fighting']"
+67,Bellsprout,60,"['Grass', 'Poison']"
+68,Weepinbell,80,"['Grass', 'Poison']"
+69,Victreebel,100,"['Grass', 'Poison']"
+70,Tentacool,60,"['Water', 'Poison']"
+71,Tentacruel,100,"['Water', 'Poison']"
+72,Geodude,60,"['Rock', 'Ground', 'Rock', 'Electric']"
+73,Graveler,80,"['Rock', 'Ground', 'Rock', 'Electric']"
+74,Golem,100,"['Rock', 'Ground', 'Rock', 'Electric']"
+75,Ponyta,60,"['Fire', 'Psychic']"
+76,Rapidash,80,"['Fire', 'Psychic', 'Fairy']"
+77,Slowpoke,120,"['Water', 'Psychic', 'Psychic']"
+78,Slowbro,120,"['Water', 'Psychic', 'Water', 'Psychic', 'Poison', 'Psychic']"
+79,Magnemite,40,"['Electric', 'Steel']"
+80,Magneton,60,"['Electric', 'Steel']"
+82,Doduo,60,"['Normal', 'Flying']"
+83,Dodrio,80,"['Normal', 'Flying']"
+84,Seel,80,['Water']
+85,Dewgong,120,"['Water', 'Ice']"
+86,Grimer,100,"['Poison', 'Poison', 'Dark']"
+87,Muk,140,"['Poison', 'Poison', 'Dark']"
+88,Shellder,40,['Water']
+89,Cloyster,60,"['Water', 'Ice']"
+90,Gastly,40,"['Ghost', 'Poison']"
+91,Haunter,60,"['Ghost', 'Poison']"
+92,Gengar,80,"['Ghost', 'Poison', 'Ghost', 'Poison', 'Ghost', 'Poison']"
+93,Onix,60,"['Rock', 'Ground']"
+94,Drowzee,80,['Psychic']
+95,Hypno,100,['Psychic']
+96,Krabby,40,['Water']
+97,Kingler,80,"['Water', 'Water']"
+98,Voltorb,60,"['Electric', 'Electric', 'Grass']"
+99,Electrode,80,"['Electric', 'Electric', 'Grass']"
+100,Exeggcute,80,"['Grass', 'Psychic']"
+101,Exeggutor,120,"['Grass', 'Psychic', 'Grass', 'Dragon']"
+102,Cubone,60,['Ground']
+103,Marowak,80,"['Ground', 'Fire', 'Ghost']"
+104,Hitmonlee,60,['Fighting']
+105,Hitmonchan,60,['Fighting']
+106,Lickitung,120,['Normal']
+107,Koffing,60,['Poison']
+108,Weezing,80,"['Poison', 'Poison', 'Fairy']"
+109,Rhyhorn,100,"['Ground', 'Rock']"
+110,Rhydon,140,"['Ground', 'Rock']"
+111,Chansey,300,['Normal']
+112,Tangela,80,['Grass']
+113,Kangaskhan,140,"['Normal', 'Normal']"
+114,Horsea,40,['Water']
+115,Seadra,80,['Water']
+116,Goldeen,60,['Water']
+117,Seaking,100,['Water']
+118,Staryu,40,['Water']
+119,Starmie,80,"['Water', 'Psychic']"
+121,Scyther,100,"['Bug', 'Flying']"
+122,Jynx,80,"['Ice', 'Psychic']"
+123,Electabuzz,80,['Electric']
+124,Magmar,80,['Fire']
+125,Pinsir,80,"['Bug', 'Bug', 'Flying']"
+126,Tauros,100,"['Normal', 'Fighting', 'Fighting', 'Fire', 'Fighting', 'Water']"
+127,Magikarp,40,['Water']
+128,Gyarados,120,"['Water', 'Flying', 'Water', 'Dark']"
+129,Lapras,160,"['Water', 'Ice', 'Water', 'Ice']"
+130,Ditto,60,['Normal']
+131,Eevee,80,"['Normal', 'Normal']"
+132,Vaporeon,160,['Water']
+133,Jolteon,80,['Electric']
+134,Flareon,80,['Fire']
+135,Porygon,80,['Normal']
+136,Omanyte,60,"['Rock', 'Water']"
+137,Omastar,100,"['Rock', 'Water']"
+138,Kabuto,40,"['Rock', 'Water']"
+139,Kabutops,80,"['Rock', 'Water']"
+140,Aerodactyl,100,"['Rock', 'Flying', 'Rock', 'Flying']"
+141,Snorlax,200,"['Normal', 'Normal']"
+142,Articuno,120,"['Ice', 'Flying', 'Psychic', 'Flying']"
+143,Zapdos,120,"['Electric', 'Flying', 'Fighting', 'Flying']"
+144,Moltres,120,"['Fire', 'Flying', 'Dark', 'Flying']"
+145,Dratini,60,['Dragon']
+146,Dragonair,80,['Dragon']
+147,Dragonite,120,"['Dragon', 'Flying']"
+148,Mewtwo,140,"['Psychic', 'Psychic', 'Fighting', 'Psychic']"
+149,Mew,120,['Psychic']
