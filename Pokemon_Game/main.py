@@ -9,8 +9,8 @@ print("     View leaderboard")
 
 selection = input()
 
-my_pokemon = Pokemon("bulbasaur", "grass")
-my_opponent = Pokemon("charmander", "fire")
+my_pokemon = Pokemon("Bulbasaur")
+my_opponent = Pokemon("Charmander")
 
 if selection == "Start game":
     pokemon_fight(my_pokemon, my_opponent)

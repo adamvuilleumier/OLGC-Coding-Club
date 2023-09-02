@@ -23,10 +23,6 @@ def get_pokemon_hp_from_internet(pokemon_name):
     return int(result.group(1))
 
 
-
-
-
-
 def get_pokemon_types_from_internet(pokemon_name):
     # get the html from pokedex website
     my_pokemon_url = "https://www.pokemon.com/us/pokedex/" + pokemon_name
