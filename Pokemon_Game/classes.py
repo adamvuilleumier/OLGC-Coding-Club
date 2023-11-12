@@ -1,6 +1,7 @@
 import requests
 import re
 import pandas as pd
+from params import GAME_PATH
 
 class Pokemon():
     def __init__(self, poke_name):
@@ -14,7 +15,7 @@ class Pokemon():
         return self.name
     
     def fill_from_database(self, pokemon_name):
-        db = pd.read_csv("Pokemon_Game/tables/pokemon.csv")
+        db = pd.read_csv(f"{GAME_PATH}/tables/pokemon.csv")
         this_pokemon = db[db["Pokemon Name"] == pokemon_name]
         self.health = int(this_pokemon["HP"])
         self.type = this_pokemon['Types'].values[0]
