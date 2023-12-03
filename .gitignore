@@ -2,6 +2,7 @@ scratch*
 *poke_images*
 
 Pokemon_Game/Switching_Variable_Values.py
+Pokemon_Game/assets/sounds/attacks/*
 
 D_parsing.py
 E_signal_processing.py
