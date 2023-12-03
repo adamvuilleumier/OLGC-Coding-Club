@@ -1,6 +1,7 @@
 import requests
 import re
 import pandas as pd
+
 from params import GAME_PATH
 
 class Pokemon():
