@@ -1,8 +1,9 @@
 scratch*
-
+Pokemon_Game/assets/
 Pokemon_Game/Switching_Variable_Values.py
-
+Pokemon_Game/tables/pokemon.csv
 D_parsing.py
 E_signal_processing.py
 
 */__pycache__/*
+__pycache__/
