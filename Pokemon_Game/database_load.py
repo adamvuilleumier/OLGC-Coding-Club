@@ -68,7 +68,7 @@ def get_pokemon_types_from_internet(pokemon_name):
 
 def get_pokemon_pictureURL_from_internet(pokemon_name):
     # https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png
-    db = pd.read_csv(f"{game_path}/tables/pokemon.csv")
+    db = pd.read_csv(f"{GAME_PATH}/tables/pokemon.csv")
     pokemon_number = db.loc[db['Pokemon Name'] == pokemon_name.capitalize()].index[0]
     return f"https://assets.pokemon.com/assets/cms2/img/pokedex/full/{(str(pokemon_number+1).rjust(3,'0'))}.png"
 
@@ -85,7 +85,7 @@ if __name__ == "__main__":
 
     for idx, pokemon in enumerate(pokemon_list):
         try:
-            urlretrieve(get_pokemon_pictureURL_from_internet(pokemon),f"{game_path}/assets/{str(idx+1)}.png")
+            urlretrieve(get_pokemon_pictureURL_from_internet(pokemon),f"{GAME_PATH}/assets/{str(idx+1)}.png")
             health = get_pokemon_hp_from_internet(pokemon) * HP_SCALING_FACTOR
             df.loc[idx, "Pokemon Name"] = pokemon
             df.loc[idx, "HP"] = health
@@ -93,5 +93,5 @@ if __name__ == "__main__":
         except:
             print(f"Cannot get stats from server for {pokemon}")
       
-    df.to_csv(f"{game_path}/tables/pokemon.csv")
+    df.to_csv(f"{GAME_PATH}/tables/pokemon.csv")
 
