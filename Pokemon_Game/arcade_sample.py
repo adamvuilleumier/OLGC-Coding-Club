@@ -68,7 +68,7 @@ class ArcadeGame(arcade.Window):
         self.coins = arcade.SpriteList()
         self.obstacles = arcade.SpriteList()
 
-        self.finished = False
+        self.health= 1
 
         # Don't show the mouse cursor
         self.set_mouse_visible(False)
@@ -97,7 +97,7 @@ class ArcadeGame(arcade.Window):
         )
 
         self.coin_pickup_sound = arcade.load_sound(get_random_sound())
-        self.finished_sound = arcade.load_sound(get_random_sound())
+        self.hit_sound = arcade.load_sound(get_random_sound())
 
 
 
@@ -198,20 +198,11 @@ class ArcadeGame(arcade.Window):
 
 
         if len(obstacle_hit) > 0:
-             # Print the final score and exit the game
-            arcade.play_sound(self.finished_sound)
-            print(f"Game over! Final score: {self.score}")
-            self.finished = True
+             # Decrease health.
+            arcade.play_sound(self.hit_sound)
+            self.health-=3
 
-        # Are there more coins than allowed on the screen?
-        if (self.score == -1):
-            # Stop adding coins
-            arcade.unschedule(function_pointer=self.add_coins_and_obstacles)
-
-            # Show the mouse cursor
-            self.set_mouse_visible(True)
-
-            self.finished = True
+        
 
     def on_draw(self):
         """Draw everything"""
@@ -236,8 +227,8 @@ class ArcadeGame(arcade.Window):
 
         self.obstacles.draw()
 
-        if self.finished:
-            print(self.finished)
+        if self.health <=0:
+        
             arcade.draw_text(
                 text=f"GAME OVER",
                 start_x=50,
